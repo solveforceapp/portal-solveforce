@@ -243,7 +243,29 @@
         .cta-description {
             font-size: 1.2em;
             margin-bottom: 30px;
+        }        @media (max-width: 968px) {
+            .header-content {
+                grid-template-columns: auto;
+                justify-items: center;
+                gap: 1rem;
+            }
+            
+            .header-content nav {
+                justify-self: center;
+            }
+            
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav a {
+                margin: 0.5rem 1rem;
+            }
         }
+        
+
         
         @media (max-width: 768px) {
             .header h1 {
@@ -336,3 +358,4 @@
     </div>
 </body>
 </html>
+

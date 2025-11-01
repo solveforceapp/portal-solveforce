@@ -33,10 +33,14 @@
         .header-content {
             max-width: 1400px;
             margin: 0 auto;
-            display: flex;
+            display: grid;
             justify-content: space-between;
             align-items: center;
             gap: 2rem;
+        }grid-template-columns: 1fr auto 1fr;$3}
+
+        .header-content nav {
+            justify-self: end;
         }
 
         .logo {
@@ -286,7 +290,29 @@
             padding: 0.5rem 1rem;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
+        }        @media (max-width: 968px) {
+            .header-content {
+                grid-template-columns: auto;
+                justify-items: center;
+                gap: 1rem;
+            }
+            
+            .header-content nav {
+                justify-self: center;
+            }
+            
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav a {
+                margin: 0.5rem 1rem;
+            }
         }
+        
+
 
         @media (max-width: 768px) {
             .hero h1 {
@@ -442,3 +468,4 @@
     </footer>
 </body>
 </html>
+
