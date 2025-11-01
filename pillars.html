@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Five Pillars | SolveForce Portal</title>
+    <meta name="description" content="Discover SolveForce's five core pillars: Connectivity, Voice, Cloud, Cybersecurity, AI & Automation, and the Axionomic Framework.">
+    <link rel="canonical" href="https://portal.solveforce.com/pillars.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Five Pillars | SolveForce">
+    <meta property="og:description" content="Comprehensive technology solutions across five core pillars of enterprise infrastructure.">
+    <meta property="og:url" content="https://portal.solveforce.com/pillars.html">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .nav-breadcrumb {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        
+        .nav-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--card-gradient);
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pillar-card.connectivity {
+            --card-gradient: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        .pillar-card.voice {
+            --card-gradient: linear-gradient(135deg, #f093fb, #f5576c);
+        }
+        
+        .pillar-card.cloud {
+            --card-gradient: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+        
+        .pillar-card.cybersecurity {
+            --card-gradient: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        }
+        
+        .pillar-card.ai {
+            --card-gradient: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .pillar-card.axionomic {
+            --card-gradient: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        
+        .pillar-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .pillar-card h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .pillar-card p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .pillar-button {
+            display: inline-block;
+            background: var(--card-gradient);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .pillar-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .framework-highlight {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+        
+        .framework-highlight::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 23px;
+            z-index: -1;
+        }
+        
+        .framework-highlight h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cta-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .pillar-card {
+                padding: 30px 20px;
+            }
+            
+            .pillar-icon {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-breadcrumb">
+            <a href="index.html">🏠 Portal Home</a> →
+            <span>Our Five Pillars</span>
+        </div>
+        
+        <div class="header">
+            <h1>🏛️ Our Five Pillars</h1>
+            <p>Comprehensive technology solutions built on five foundational pillars of enterprise infrastructure, powered by the revolutionary Axionomic Framework for intelligent knowledge systems.</p>
+        </div>
+        
+        <div class="pillars-grid">
+            <div class="pillar-card connectivity">
+                <span class="pillar-icon">🌐</span>
+                <h2>Connectivity</h2>
+                <p>Fiber optics, wireless, satellite, and enterprise internet solutions for mission-critical connectivity.</p>
+                <a href="pillars/connectivity.html" class="pillar-button">Explore Connectivity</a>
+            </div>
+            
+            <div class="pillar-card voice">
+                <span class="pillar-icon">📞</span>
+                <h2>Phone & Voice</h2>
+                <p>VoIP, SIP trunking, unified communications, and enterprise telephony solutions.</p>
+                <a href="pillars/voice.html" class="pillar-button">Explore Voice</a>
+            </div>
+            
+            <div class="pillar-card cloud">
+                <span class="pillar-icon">☁️</span>
+                <h2>Cloud Services</h2>
+                <p>IaaS, PaaS, SaaS, hybrid cloud, and multi-cloud management solutions.</p>
+                <a href="pillars/cloud.html" class="pillar-button">Explore Cloud</a>
+            </div>
+            
+            <div class="pillar-card cybersecurity">
+                <span class="pillar-icon">🔒</span>
+                <h2>Cybersecurity</h2>
+                <p>Firewalls, SIEM, zero trust architecture, compliance, and threat detection.</p>
+                <a href="pillars/cybersecurity.html" class="pillar-button">Explore Security</a>
+            </div>
+            
+            <div class="pillar-card ai">
+                <span class="pillar-icon">🤖</span>
+                <h2>AI & Automation</h2>
+                <p>Machine learning, predictive analytics, process automation, and intelligent systems.</p>
+                <a href="pillars/ai-automation.html" class="pillar-button">Explore AI</a>
+            </div>
+        </div>
+        
+        <div class="framework-highlight">
+            <h2>📚 Axionomic Framework</h2>
+            <p style="font-size: 1.2em; color: #666; margin-bottom: 30px;">125 Nomos linguistic-mathematical framework for enterprise knowledge systems (v5.13). The foundation that powers intelligent decision-making across all five pillars.</p>
+            <a href="pillars/axionomic.html" class="pillar-button axionomic">Discover the Framework</a>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Ready to Build on Our Five Pillars?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Transform your enterprise infrastructure with our comprehensive technology solutions.</p>
+            <a href="fiber-availability.html" class="cta-button">🔍 Check Infrastructure</a>
+            <a href="tel:888-765-8301" class="cta-button">📞 Speak with Expert</a>
+            <div class="contact-info">
+                📞 24/7 Enterprise Support: <strong>888-765-8301</strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
