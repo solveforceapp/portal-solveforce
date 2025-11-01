@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveForce Portal - Enterprise Telecommunications & IT Solutions</title>
+    <meta name="description" content="SolveForce Portal - Access enterprise telecommunications, cloud, security, and AI services">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            color: white;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .services {
+            background: white;
+            padding: 5rem 2rem;
+        }
+        
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .service-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">🌐 SolveForce Portal</a>
+            <nav>
+                <a href="https://solveforceapp.github.io/SOLVEFORCE.COM/">Documentation</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Enterprise Telecommunications & IT Solutions</h1>
+        <p>Connecting businesses with cutting-edge connectivity, cloud, security, and AI services</p>
+        <div class="cta-buttons">
+            <a href="https://solveforceapp.github.io/SOLVEFORCE.COM/" class="btn btn-primary">📚 View Documentation</a>
+            <a href="tel:+18887658301" class="btn btn-secondary">📞 Call (888) 765-8301</a>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2>Our Five Pillars</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>🌐 Connectivity</h3>
+                    <p>Fiber optics, wireless, satellite, and enterprise internet solutions for mission-critical connectivity.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📞 Phone & Voice</h3>
+                    <p>VoIP, SIP trunking, unified communications, and enterprise telephony solutions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>☁️ Cloud Services</h3>
+                    <p>IaaS, PaaS, SaaS, hybrid cloud, and multi-cloud management solutions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🔒 Cybersecurity</h3>
+                    <p>Firewalls, SIEM, zero trust architecture, compliance, and threat detection.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>🤖 AI & Automation</h3>
+                    <p>Machine learning, predictive analytics, process automation, and intelligent systems.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📚 Axionomic Framework</h3>
+                    <p>125 Nomos linguistic-mathematical framework for enterprise knowledge systems (v5.13).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <p>&copy; 2025 SolveForce. Enterprise Telecommunications & IT Solutions.</p>
+        <div class="contact-info">
+            <a href="tel:+18887658301">📞 (888) 765-8301</a>
+            <a href="mailto:contact@solveforce.com">📧 contact@solveforce.com</a>
+            <a href="https://solveforceapp.github.io/SOLVEFORCE.COM/">📖 Documentation</a>
+        </div>
+    </footer>
+</body>
+</html>
